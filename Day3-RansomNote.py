@@ -3,6 +3,14 @@ Problem Link : "https://leetcode.com/problems/ransom-note/"
 """
 
 """
+Approach : Create a dictionary object for both "magazine" and "ransomNote" .
+           Iterate through "ransomNote" dictionary and check if key is present in "magazine"
+           and count of key in "ransomNote" should be less than count of key in "magazine".
+           If count of key in "ransomNote" is greater than count of key in "magazine" then
+           we return False .
+"""
+"""
+# Method for creating our own dictionary
 def returnDict(string):
     dict_ = dict()
     for each in string:
@@ -29,13 +37,17 @@ def canConstruct(note, magazine):
         return False
 """
 import collections
+
+
 def canConstruct(note, magazine):
-    dict_m = collections.Counter(magazine)
+    dict_m = collections.Counter(magazine)  # same dictionary but using Counter()
     dict_n = collections.Counter(note)
     for char, count in dict_n.items():
         if dict_m[char] < count:
             return False
     return True
+
+
 note = input()
 magazine = input()
-print(canConstruct(note,magazine))
+print(canConstruct(note, magazine))
