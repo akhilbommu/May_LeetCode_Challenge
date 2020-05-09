@@ -1,3 +1,11 @@
+"""
+Problem Link : "https://leetcode.com/problems/check-if-it-is-a-straight-line/"
+Approach : Take x_coordinates into one set and y_coordinates into another set. If either length of set of
+           x_coordinates is 1 or length of set of y_coordinates is 1 we return True.Because if all
+           x_ordinates are same then it is vertical line and vice versa.
+           Inorder to get a straight line the slopes between the points should be same.
+           Calculate the slope for all points and compare the slopes if same return True else False.
+"""
 class CheckIfItIsStraightLine:
     def checkStraightLine(self, coordinates):
         if len(coordinates) < 2:
