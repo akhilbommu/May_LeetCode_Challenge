@@ -41,7 +41,7 @@ class Trie:
 
     def __init__(self):
         """
-        Initialize your data structure here.
+        Initialize your Data Structure here.
         """
         self.root = TreeNode(None)
 
