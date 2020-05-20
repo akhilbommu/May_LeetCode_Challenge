@@ -7,7 +7,8 @@ Approach : Create a dictionary of charcaters of 'S'.Then iterate through each ch
             get the value of that particular character and add it to count and finally return the count.
 """
 
-class Solution:
+
+class JewelsAndStones:
     def numJewelsInStones(self, J: str, S: str) -> int:
         d = dict()
         for ch in S:
@@ -23,7 +24,5 @@ class Solution:
         return count
 
 
-obj = Solution()
-J = "aA"
-S = "aAAbbbb"
-print(obj.numJewelsInStones(J,S))
+obj = JewelsAndStones()
+print(obj.numJewelsInStones("aA", "aAAbbbb"))
