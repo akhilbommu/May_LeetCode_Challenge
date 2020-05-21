@@ -1,3 +1,8 @@
+"""
+https://leetcode.com/problems/count-square-submatrices-with-all-ones/
+"""
+
+
 class CountSquareSubmatricesWithAllOnes:
 
     def countSquares(self, matrix):
@@ -21,6 +26,7 @@ class CountSquareSubmatricesWithAllOnes:
 
         return submatrices_result
 
+
 obj = CountSquareSubmatricesWithAllOnes()
-print(obj.countSquares([[0,1,1,1],[1,1,1,1],[0,1,1,1]]))
-print(obj.countSquares([[1,0,1],[1,1,0],[1,1,0]]))
+print(obj.countSquares([[0, 1, 1, 1], [1, 1, 1, 1], [0, 1, 1, 1]]))
+print(obj.countSquares([[1, 0, 1], [1, 1, 0], [1, 1, 0]]))
